@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="blog" frontName="blog">
+            <module name="GustavosJob_WebPages"/>
+        </route>
+        <route id="curriculum" frontName="curriculum">
+            <module name="GustavosJob_WebPages"/>
+        </route>
+        <route id="certificates" frontName="certificates">
+            <module name="GustavosJob_WebPages"/>
+        </route>
+        <route id="contact" frontName="contact">
+            <module name="GustavosJob_WebPages"/>
+        </route>
+        <route id="skills" frontName="skills">
+            <module name="GustavosJob_WebPages"/>
+        </route>
+        <route id="timeline" frontName="timeline">
+            <module name="GustavosJob_WebPages"/>
+        </route>
+    </router>
+</config>

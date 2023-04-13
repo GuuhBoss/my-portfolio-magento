@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * GustavosJob_MenuCore menu.xml
+
+ * @author   Gustavo Silva <gustavosjob@gmail.com>
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <!--  Main Menu   -->
+        <add id="GustavosJob_MenuCore::management"
+             title="GustavosJob"
+             module="GustavosJob_MenuCore"
+             sortOrder="10"
+             resource="GustavosJob_MenuCore::management"/>
+    </menu>
+</config>

@@ -1,0 +1,33 @@
+<div class="position-absolute top-50 start-50 translate-middle">
+    <img src='<?= $this->getViewFileUrl('img/gustavinho.jpg'); ?>' id='img'  class="rounded-circle sombra w-75 text-center mx-auto"/>
+    <div id="text-typed" class="text-center">
+        <div id="typed-strings">
+            <p>Olá! Eu sou <strong>Gustavo Silva</strong>!</p>
+            <p>Sou um <strong>Engenheiro Civil</strong>!</p>
+            <p>Sou um <strong>Web Developer</strong>!</p>
+            <p><strong>Sejam Bem-vindos à Minha Página!</strong></p>
+        </div>
+        <span id="typed"></span>
+    </div>
+</div>
+
+<script>
+    require(['jquery','typedjs'], function ($,typedjs) {
+        var typed = new typedjs('#typed', {
+            stringsElement: '#typed-strings',
+            backSpeed: 40,
+            typeSpeed: 40,
+            loop: true
+        });
+
+        $(window).on('scroll', function (){
+            if (window.scrollY > 25) {
+                let nav = document.querySelector('nav')
+                nav.className = 'navbar navbar-expand-md navbar-blue bg-blue bg-opacity-75 p-4 shadow fixed-top'
+            } else {
+                let nav = document.querySelector('nav')
+                nav.className = 'navbar navbar-expand-md navbar-blue bg-blue bg-transparent p-4 fixed-top'
+            }
+        })
+    })
+</script>

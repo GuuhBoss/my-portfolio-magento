@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Magento_Theme::css/100header.css" />
+    </head>
+    <body>
+        <referenceContainer name="header.panel.wrapper">
+            <block name="breadcrumb_full" template="Magento_Theme::html/header/breadcrumb_full.phtml"/>
+        </referenceContainer>
+        <move element="breadcrumb_full" destination="header.panel.wrapper" after="header.panel" />
+    </body>
+</page>
+

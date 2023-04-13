@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © GustavosJob. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="head.additional">
+            <block class="GustavosJob\Flags\Block\CompiledStyles" name="gustavosjob.storesflags.compiled_styles" ifconfig="gustavosjob_storesflags/general/compiled_styles"/>
+        </referenceBlock>
+        <referenceBlock name="store_language">
+            <action method="setTemplate" ifconfig="gustavosjob_storesflags/general/enabled">
+                <argument name="template" xsi:type="string">GustavosJob_Flags::switch/languages.phtml</argument>
+            </action>
+        </referenceBlock>
+    </body>
+</page>

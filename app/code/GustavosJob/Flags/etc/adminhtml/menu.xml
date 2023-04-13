@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <!--   Menu   -->
+        <add id="GustavosJob_Flags::menu"
+             title="Flags"
+             module="GustavosJob_Flags"
+             sortOrder="10"
+             parent="GustavosJob_MenuCore::management"
+             resource="GustavosJob_Flags::menu"/>
+
+        <!--   Actions   -->
+        <add id="GustavosJob_Flags::flags"
+             title="Configuration"
+             module="GustavosJob_Flags"
+             sortOrder="9999"
+             resource="GustavosJob_Flags::flags"
+             parent="GustavosJob_Flags::menu"
+             action="adminhtml/system_config/edit/section/gustavosjob_storesflags"/>
+
+        <add id="GustavosJob_Flags::store_configuration"
+             title="Store Configuration"
+             module="GustavosJob_Flags"
+             sortOrder="9999"
+             resource="GustavosJob_Flags::store_configuration"
+             parent="GustavosJob_Flags::menu"
+             action="adminhtml/system_store/index"/>
+
+    </menu>
+</config>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="currency" remove="true"/>
+        <referenceBlock name="minicart" remove="true"/>
+        <referenceBlock name="top.search" remove="true"/>
+        <referenceBlock name="header-wrapper" remove="true"/>
+        <referenceBlock name="navigation.sections" remove="true"/>
+        <referenceBlock name="header.links" remove="true"/>
+        <referenceBlock name="sales-guest-form-link" remove="true"/>
+        <referenceBlock name="privacy-policy-link" remove="true"/>
+        <referenceBlock name="skip_to_content" remove="true"/>
+        <referenceBlock name="redeem" remove="true" />
+        <referenceBlock name="div.sidebar.additional" remove="true" />
+        <move element="logo" destination="header.panel" before="-"/>
+
+        <referenceContainer name="header.panel" htmlTag="nav" htmlClass="navbar navbar-expand-md navbar-blue bg-light bg-transparent p-4 fixed-top">
+            <block name="navbar" template="Magento_Theme::html/header/navbar.phtml"/>
+        </referenceContainer>
+
+        <referenceBlock name="footer_links">
+            <block name="footer_container" template="Magento_Theme::html/footer/link.phtml"/>
+        </referenceBlock>
+    </body>
+</page>

@@ -1,0 +1,70 @@
+@font-family-name__base: 'Montserrat';
+@font-family__base: @font-family-name__base, @font-family__sans-serif;
+
+& when (@media-common = true) {
+
+    .lib-font-face(
+        @family-name: @font-family-name__base,
+        @font-path: '@{baseDir}fonts/Montserrat/Montserrat-Italic',
+        @font-weight: normal,
+        @font-style: italic,
+        @font-display: swap
+    );
+
+    .lib-font-face(
+        @family-name: @font-family-name__base,
+        @font-path: '@{baseDir}fonts/Montserrat/Montserrat-LightItalic',
+        @font-weight: 300,
+        @font-style: italic,
+        @font-display: swap
+    );
+
+    .lib-font-face(
+        @family-name: @font-family-name__base,
+        @font-path: '@{baseDir}fonts/Montserrat/Montserrat-SemiBoldItalic',
+        @font-weight: 500,
+        @font-style: italic,
+        @font-display: swap
+    );
+
+    .lib-font-face(
+        @family-name: @font-family-name__base,
+        @font-path: '@{baseDir}fonts/Montserrat/Montserrat-BoldItalic',
+        @font-weight: bold,
+        @font-style: italic,
+        @font-display: swap
+    );
+
+    .lib-font-face(
+        @family-name: @font-family-name__base,
+        @font-path: '@{baseDir}fonts/Montserrat/Montserrat-Regular',
+        @font-weight: normal,
+        @font-style: normal,
+        @font-display: swap
+    );
+
+    .lib-font-face(
+        @family-name: @font-family-name__base,
+        @font-path: '@{baseDir}fonts/Montserrat/Montserrat-Light',
+        @font-weight: 300,
+        @font-style: normal,
+        @font-display: swap
+    );
+
+    .lib-font-face(
+        @family-name: @font-family-name__base,
+        @font-path: '@{baseDir}fonts/Montserrat/Montserrat-SemiBold',
+        @font-weight: 500,
+        @font-style: normal,
+        @font-display: swap
+    );
+
+    .lib-font-face(
+        @family-name: @font-family-name__base,
+        @font-path: '@{baseDir}fonts/Montserrat/Montserrat-Bold',
+        @font-weight: bold,
+        @font-style: normal,
+        @font-display: swap
+    );
+
+}

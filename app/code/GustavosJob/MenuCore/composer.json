@@ -1,0 +1,22 @@
+{
+    "name": "gustavosjob/module-menucore",
+    "description": "modify product view",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Gustavo Silva",
+            "email": "gustavosjob@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "GustavosJob\\MenuCore\\": ""
+        }
+    }
+}

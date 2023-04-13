@@ -1,0 +1,34 @@
+@gustavosjob-icons-admin__font-name-path: '@{baseDir}GustavosJob_Core/fonts/gustavosjob-icon';
+@gustavosjob-icons-icons-admin__font-name : 'gustavosjob-icon';
+.lib-font-face(
+  @family-name:@gustavosjob-icons-icons-admin__font-name,
+  @font-path: @gustavosjob-icons-admin__font-name-path,
+  @font-weight: normal,
+  @font-style: normal
+);
+.admin__menu .item-management.parent.level-0 > a:before {
+  font-family: @gustavosjob-icons-icons-admin__font-name;
+  content: ".";
+}
+
+.admin__page-nav.GustavosJob,
+.admin__page-nav.GustavosJob:hover,
+.admin__page-nav.GustavosJob._collapsed._show {
+  .admin__page-nav-title {
+    background-image: url('../GustavosJob_MenuCore/fonts/logo.png');
+    background-repeat: no-repeat;
+    background-position: left 1rem center;
+    background-size: 25px;
+
+    strong {
+      margin-left: 3rem;
+    }
+  }
+}
+
+.col-store_flag {
+  .flag-icon {
+    font-size: 1.4rem;
+    margin-right: 1rem;
+  }
+}

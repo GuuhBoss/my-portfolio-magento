@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Magento_Theme::css/50header.css" />
+    </head>
+    <body>
+        <referenceContainer name="header.panel.wrapper">
+            <block name="breadcrumb_half" template="Magento_Theme::html/header/breadcrumb_half.phtml"/>
+        </referenceContainer>
+        <referenceBlock name="content" >
+            <block name="timeline" template="GustavosJob_WebPages::timeline.phtml" />
+        </referenceBlock>
+    </body>
+</page>

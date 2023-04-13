@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="row col-12">
+        <div class="mt-5 text-center" id="fale">
+            <h2>Fale comigo!</h2>
+            <p class="text-muted">
+                Estou muito feliz que você decidiu entrar em contato comigo. Por
+                favor, preencha o formulário abaixo com sua mensagem.
+            </p>
+        </div>
+    </div>
+    <form action="./php/envio.php" method="post">
+        <div class="row">
+            <div class="col-md-6">
+                <label class="label-control" for="nome">Nome</label>
+                <input
+                    class="form-control shadow"
+                    type="text"
+                    name="nome"
+                    id="nome"
+                    placeholder="Seu Nome:"
+                />
+                <label class="label-control" for="email">Email</label>
+                <input
+                    class="form-control shadow"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Seu Email:"
+                    required
+                />
+                <label class="label-control" for="assunto">Assunto</label>
+                <input
+                    class="form-control shadow"
+                    type="text"
+                    name="assunto"
+                    id="assunto"
+                    placeholder="Assunto:"
+                />
+            </div>
+            <div class="col-md-6">
+                <label class="label-control" for="assunto">Mensagem</label>
+                <textarea
+                    class="form-control shadow"
+                    name="mensagem"
+                    id="mensagem"
+                    rows="7"
+                    placeholder="Mensagem:"
+                    required
+                ></textarea>
+            </div>
+            <button
+                type="submit"
+                class="col-3 btn btn-primary shadow"
+                onclick="Mailer()"
+            >
+                Enviar
+            </button>
+        </div>
+    </form>
+</div>

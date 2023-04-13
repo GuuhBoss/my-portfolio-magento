@@ -1,0 +1,21 @@
+{
+    "name": "magekey/module-webpages",
+    "description": "Magento 2 WebPages",
+    "type": "magento2-module",
+    "license": "MIT",
+    "version": "2.2.0",
+    "authors": [
+        {
+            "name": "Gustavo Silva",
+            "email": "gustavosjob@gmail.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "GustavosJob\\WebPages\\": ""
+        }
+    }
+}

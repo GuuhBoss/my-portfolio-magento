@@ -1,0 +1,23 @@
+// Mobile-only styles for all screen sizes
+nav {
+  &.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 10%;
+
+    .logo {
+      justify-self: start;
+      max-width: 75%;
+    }
+
+    .container-fluid {
+      justify-self: end;
+      flex-direction: row-reverse;
+      width: auto;
+      margin-right: 0;
+    }
+
+    .switcher {
+      order: 1;
+    }
+  }
+}

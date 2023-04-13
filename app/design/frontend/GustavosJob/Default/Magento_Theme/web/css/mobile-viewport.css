@@ -1,0 +1,11 @@
+@media screen and (max-width: 768px) {
+    /*
+    body .page-header .content .minicart-wrapper .ui-dialog .block-minicart {
+        height: calc((var(--vh, 1vh) * 100) - 99px);
+    }
+    */
+
+    body .sections.nav-sections {
+        height: calc((var(--vh, 1vh) * 100) - 90px);
+    }
+}
